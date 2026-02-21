@@ -36,12 +36,13 @@ feature/startup-layer
 
 ## Workflow
 
-feature → develop → main
+feature → develop → release → main
 
 1. Create feature branch from develop
 2. Implement and commit changes
 3. Merge into develop
-4. Once stable, merge develop into main
+4. Once develop stable, create release branch
+4. Merge release into main
 5. Tag release
 
 ---
@@ -50,7 +51,7 @@ feature → develop → main
 
 Use conventional style:
 
-feat: add dio driver  
+feature: add dio driver  
 fix: correct clock configuration  
 docs: update architecture documentation  
 chore: update gitignore  
