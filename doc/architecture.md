@@ -17,8 +17,10 @@ BSW (Basic Software)
 └─ System
 ↓
 MCAL (Microcontroller Abstraction Layer)
-├─ Common API
-└─ MCU Variants (STM32F4, STM32F7, etc.)
+├─ common (Common API)
+└─ variants (MCU Variants (STM32F4, STM32F7, etc.))
+    └─ stm32fx
+    └─ stm32fx
 ↓
 Hardware
 

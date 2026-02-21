@@ -42,6 +42,14 @@
 *.idb
 *.pdb
 
+# Build directories
+/build/
+/bin/
+/Debug/
+/Release/
+/dist/
+/tmp/
+
 # Kernel Module Compile Results
 *.mod*
 *.cmd

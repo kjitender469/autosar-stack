@@ -1,0 +1,7 @@
+mach create
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery.repl
+
+sysbus LoadELF @build/main.elf
+
+showAnalyzer sysbus.usart2
+start

@@ -1,0 +1,21 @@
+/* platform/startup/startup.s - minimal example for STM32F7 */
+    .section .isr_vector, "a", %progbits
+    .word _estack        /* Stack pointer */
+    .word Reset_Handler  /* Reset handler */
+    .word NMI_Handler
+    .word HardFault_Handler
+
+    .section .text.Reset_Handler
+    .global Reset_Handler
+Reset_Handler:
+    bl main
+InfiniteLoop:
+    b InfiniteLoop
+
+NMI_Handler:
+    b .
+
+HardFault_Handler:
+    b .
+
+_estack = 0x20020000  /* example RAM top */
